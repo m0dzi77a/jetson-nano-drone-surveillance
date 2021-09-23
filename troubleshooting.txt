@@ -1,0 +1,4 @@
+if your ran into errors like increase fifo_size or udp warning
+you may have to swap more ram 
+you will find a solution over here
+https://github.com/JetsonHacksNano/installSwapfile
