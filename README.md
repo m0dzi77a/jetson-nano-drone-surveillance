@@ -104,16 +104,16 @@ works also pretty well with the "FaceNet-120" model
 
 Just a little explanation about part of the code:
 
-img = frame_read.frame
-	img = cv2.resize(img, (480, 360)) #360,240
-	img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-	img = cv2.cvtColor(img, cv2.COLOR_RGB2RGBA).astype(np.float32)
-	img = jetson.utils.cudaFromNumpy(img)
-	detections = net.Detect(img)
-	img = jetson.utils.cudaToNumpy(img)
-	img = cv2.cvtColor(img, cv2.COLOR_RGBA2RGB).astype(np.uint8)
-	img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
-	cv2.imshow("drone", img)
+$ img = frame_read.frame
+	$ img = cv2.resize(img, (480, 360)) #360,240
+	$ img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+	$ img = cv2.cvtColor(img, cv2.COLOR_RGB2RGBA).astype(np.float32)
+	$ img = jetson.utils.cudaFromNumpy(img)
+	$ detections = net.Detect(img)
+	$ img = jetson.utils.cudaToNumpy(img)
+	$ img = cv2.cvtColor(img, cv2.COLOR_RGBA2RGB).astype(np.uint8)
+	$ img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
+	$ cv2.imshow("drone", img)
   
 we need to resize the frame of the drone camera output just to safe some space.
 and we need to change the datatype of the videoinput so the detection will work.
