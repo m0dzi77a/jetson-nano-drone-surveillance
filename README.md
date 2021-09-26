@@ -1,4 +1,4 @@
-# jetson-nano-drone-surveillance
+# Jetson-Nano-Surveillance-Drone
 Using the ssd-mobilenet-v1 and the DJI Tello Drone on the Nvidia Jetson Nano for surveillance flights
 
 After First Boot is completed we have to Build all necessary dependencies from source. To get them we use dusty-nv description. 
@@ -26,7 +26,7 @@ After completion we can rather get some librarys
 
 $ pip3 install djitellopy
 
-This Library is developed by Damian Fuentes and will be the link between our Dji Tello Drone and our Nvidia Jetson Nano.
+This Library is developed by Damia Fuentes and will be the link between our Dji Tello Drone and our Nvidia Jetson Nano.
 
 [https://github.com/damiafuentes](https://github.com/damiafuentes)
 
@@ -68,4 +68,8 @@ we need to resize the frame of the drone camera output just to safe some space.
 and we need to change the datatype of the videoinput so the detection will work.
 but its pretty easy because jetson utils cuda does this.
 
+## Update will be coming soon
 
+trying to increase performance with threading
+
+## meanwhile thinking about my own trained neuronal network
