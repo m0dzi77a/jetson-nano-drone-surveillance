@@ -27,7 +27,9 @@ $ sudo ldconfig
 
 After completion we can rather get some librarys 
 
+```
 $ pip3 install djitellopy
+```
 
 This Library is developed by Damia Fuentes and will be the link between our Dji Tello Drone and our Nvidia Jetson Nano.
 
@@ -142,4 +144,5 @@ if __name__ == "__main__":
 
 
 
-## meanwhile thinking about my own trained neuronal network
+## Meanwhile thinking about my own trained neuronal network
+to be continued..
